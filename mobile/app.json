@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "EATSLY",
+    "slug": "tasteai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/eatsly-icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/eatsly-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/eatsly-icon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow EATSLY to access your photos to identify dishes and generate recipes.",
+          "cameraPermission": "Allow EATSLY to use your camera to scan food and generate recipes."
+        }
+      ]
+    ]
+  }
+}
